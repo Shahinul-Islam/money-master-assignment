@@ -1,7 +1,7 @@
 let earning = document.getElementById("earning"); //gets earnings
 earning.addEventListener("keyup", function (e) {
   if (isNaN(e.target.value) || e.target.value <= 0) {
-    // alert("enter positive number");
+    alert("enter positive number");
     document.getElementById("calculate-btn").classList.add("disabled");
   } else {
     document.getElementById("calculate-btn").classList.remove("disabled");
@@ -12,7 +12,7 @@ earning.addEventListener("keyup", function (e) {
 let rentCost = document.getElementById("rentCost");
 rentCost.addEventListener("keyup", function (e) {
   if (isNaN(e.target.value) || e.target.value <= 0) {
-    // alert("enter positive number");
+    alert("enter positive number");
     document.getElementById("calculate-btn").classList.add("disabled");
   } else {
     document.getElementById("calculate-btn").classList.remove("disabled");
@@ -23,7 +23,7 @@ rentCost.addEventListener("keyup", function (e) {
 let foodCost = document.getElementById("foodCost");
 foodCost.addEventListener("keyup", function (e) {
   if (isNaN(e.target.value) || e.target.value <= 0) {
-    // alert("enter positive number");
+    alert("enter positive number");
     document.getElementById("calculate-btn").classList.add("disabled");
   } else {
     document.getElementById("calculate-btn").classList.remove("disabled");
@@ -34,7 +34,7 @@ foodCost.addEventListener("keyup", function (e) {
 let clothingCost = document.getElementById("clothingCost");
 clothingCost.addEventListener("keyup", function (e) {
   if (isNaN(e.target.value) || e.target.value <= 0) {
-    // alert("enter positive number");
+    alert("enter positive number");
     document.getElementById("calculate-btn").classList.add("disabled");
   } else {
     document.getElementById("calculate-btn").classList.remove("disabled");
@@ -48,7 +48,7 @@ let calculateBtn = document.getElementById("calculate-btn");
 let savings = document.getElementById("savings");
 savings.addEventListener("keyup", function (e) {
   if (isNaN(e.target.value) || e.target.value <= 0) {
-    // alert("enter positive number");
+    alert("enter positive number");
     document.getElementById("savings-btn").classList.add("disabled");
   } else {
     document.getElementById("savings-btn").classList.remove("disabled");

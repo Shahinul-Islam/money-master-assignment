@@ -7,6 +7,10 @@ saveBtn.addEventListener("click", function () {
       parseFloat(rentCost.value) +
       parseFloat(foodCost.value) +
       parseFloat(clothingCost.value));
+
+  if (finalRemainedMoney < 0) {
+    alert("savings amount are invalid");
+  }
   document.getElementById("savingAmount").innerText = monthlySave;
   document.getElementById("finalBalance").innerText = finalRemainedMoney;
 });
