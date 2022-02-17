@@ -59,29 +59,29 @@ savings.addEventListener("keyup", function (e) {
 let saveBtn = document.getElementById("savings-btn");
 
 //calculate expenses
-function sum() {
+/* function sum() {
   let totalExpense =
     parseFloat(rentCost.value) +
     parseFloat(foodCost.value) +
     parseFloat(clothingCost.value);
   return totalExpense;
-}
+} */
 
 //get remained money after expense
-function substract() {
+/* function substract() {
   let updatedBalance = parseFloat(earning.value) - totalExpense;
   return updatedBalance;
-}
+} */
 
 //savings amount
-function saingsAmount() {
+/* function saingsAmount() {
   let monthlySave =
     (parseFloat(savings.value) / 100) * parseFloat(earning.value);
   return monthlySave;
-}
+} */
 
 //remaining balance after all expense and savings
-function remainingBalance() {
+/* function remainingBalance() {
   let remainedMoney = updatedBalance - monthlySave;
   return remainedMoney;
-}
+} */
