@@ -26,17 +26,17 @@
         </div>
         <section class="col-md-6 text-center">
           <h4 class="my-2">Income</h4>
-          <span class="my-2">Income: </span><input type="tel" name="" id="earning" class="form-control w-25 mx-auto my-3"/>
+          <span class="my-2">Income: </span><input type="text" name="" id="earning" class="form-control w-25 mx-auto my-3"/>
           <h4>Expenses</h4>
-          <span class="my-2">Rent: </span><input class="my-2 " type="tel" name="" id="rentCost" /><br>
-          <span class="my-2">Food: </span><input class="my-2 " type="tel" name="" id="foodCost" /><br>
-          <span class="my-2">Cloths: </span><input class="my-2 " type="tel" name="" id="clothingCost" />
+          <span class="my-2">Rent: </span><input class="my-2 " type="text" name="" id="rentCost" /><br>
+          <span class="my-2">Food: </span><input class="my-2 " type="text" name="" id="foodCost" /><br>
+          <span class="my-2">Cloths: </span><input class="my-2 " type="text" name="" id="clothingCost" />
           <div>
             <button type="button" class="btn btn-primary my-2" id="calculate-btn">Calculate</button>
           </div>
-          <p id="totalExpenses">Total Expenses: </p>
+          <p >Total Expenses: <span id="totalExpenses"></span></p>
           <p id="remainingBalance">Balance: </p>
-          <span class="my-2">Save: </span><input class="my-2 w-25" type="tel" name="" id="savings" /><span class="px-3">%</span><button type="button" class="btn btn-primary" id="savings-btn">Save</button><br>
+          <span class="my-2">Save: </span><input class="my-2 w-25" type="text" name="" id="savings" /><span class="px-3">%</span><button type="button" class="btn btn-primary" id="savings-btn">Save</button><br>
           <p id="savingAmount">Saving amount: </p>
           <p id="remainingBalance">Remaining balance: </p>
       </section>
@@ -48,5 +48,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
