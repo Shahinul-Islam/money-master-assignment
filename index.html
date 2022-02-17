@@ -12,12 +12,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- css file  -->
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Hisaber Khata</title>
   </head>
   <body>
-    <header>
-      <h1 class="text-center text-primary">Hisaber Khata</h1>
+    <header class="container">
+      <h1 class="text-center text-primary fw-bold my-5">Hisaber Khata</h1>
     </header>
     <main class="container">
       <section class="row d-flex justify-content-center">
@@ -25,20 +27,20 @@
           <img src="images/img01.jpg" class="img-fluid" alt="" />
         </div>
         <section class="col-md-6 text-center">
-          <h4 class="my-2">Income</h4>
-          <span class="my-2">Income: </span><input type="text" name="" id="earning" class="form-control w-25 mx-auto my-3"/>
+          <h4 class="my-2 fw-bold">Income</h4>
+          <input type="text" name="" id="earning" class="form-control w-50 mx-auto my-3"/>
           <h4>Expenses</h4>
-          <span class="my-2">Rent: </span><input class="my-2 " type="text" name="" id="rentCost" /><br>
-          <span class="my-2">Food: </span><input class="my-2 " type="text" name="" id="foodCost" /><br>
-          <span class="my-2">Cloths: </span><input class="my-2 " type="text" name="" id="clothingCost" />
+          <span class="my-2 fw-bold">Rent: </span><input class="my-2 form-control w-50 d-inline " type="text" name="" id="rentCost" /><br>
+          <span class="my-2 fw-bold">Food: </span><input class="my-2 form-control w-50 d-inline " type="text" name="" id="foodCost" /><br>
+          <span class="my-2 fw-bold">Cloths: </span><input class="my-2 form-control w-50 d-inline " type="text" name="" id="clothingCost" />
           <div>
             <button type="button" class="btn btn-primary my-2" id="calculate-btn">Calculate</button>
           </div>
-          <p >Total Expenses: <span id="totalExpenses"></span></p>
-          <p>Balance: <span id="remainingBalance"></span></p>
-          <span class="my-2">Save: </span><input class="my-2 w-25" type="text" name="" id="savings" /><span class="px-3">%</span><button type="button" class="btn btn-primary" id="savings-btn">Save</button><br>
-          <p>Saving amount: <span id="savingAmount"></span></p>
-          <p>Remaining balance: <span id="finalBalance"></span></p>
+          <p class="fw-bold">Total Expenses: <span id="totalExpenses"></span></p>
+          <p class="fw-bold">Balance: <span id="remainingBalance"></span></p>
+          <span class="my-2 fw-bold">Save: </span><input class="my-2 form-control w-25 d-inline" type="text" name="" id="savings" /><span class="px-3"><b>%</b></span><button type="button" class="btn btn-primary" id="savings-btn">Save</button><br>
+          <p class="fw-bold">Saving amount: <span id="savingAmount"></span></p>
+          <p class="fw-bold">Remaining balance: <span id="finalBalance"></span></p>
       </section>
     </main>
 

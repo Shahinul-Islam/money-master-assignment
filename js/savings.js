@@ -1,12 +1,13 @@
 saveBtn.addEventListener("click", function () {
-  let monthlySave =
-    (parseFloat(savings.value) / 100) * parseFloat(earning.value);
+  let monthlySave = Math.round(
+    (parseInt(savings.value) / 100) * parseInt(earning.value)
+  );
   let finalRemainedMoney =
-    parseFloat(earning.value) -
+    parseInt(earning.value) -
     (monthlySave +
-      parseFloat(rentCost.value) +
-      parseFloat(foodCost.value) +
-      parseFloat(clothingCost.value));
+      parseInt(rentCost.value) +
+      parseInt(foodCost.value) +
+      parseInt(clothingCost.value));
 
   if (finalRemainedMoney < 0) {
     alert("savings amount are invalid");
